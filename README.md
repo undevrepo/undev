@@ -2,62 +2,91 @@
 ------
 
 - X13 Algo
-- 8685 rpc, 
-- 8684  port, 
+- 7203 rpc, 
+- 7202 port, 
 
-- 48,000,000 undev maximum possible to mine (logically possible, but improbable)
+
 - Initial Hybrid Style, PoS working from the outset
 - 1 minute spacing
-- Difficulty changes with each block
 - Reward changes every 30,000 blocks
-- Rewards between 80 - 500 undev
-- 25 confirmations for generated blocks
+- Rewards go up and down and up
 
-- full PoS at 300,000 blocks
+
+- full PoS at 310,000 blocks
 - 6% PoS. No maximum staking age.
-
-
--------
-
-
-
-# Mining Software for CPU
-
-$ sudo apt-get install build-essential libcurl4-openssl-dev git automake libtool libjansson* libncurses5-dev libssl-dev
-
-$ git clone --recursive https://github.com/tpruvot/cpuminer-multi.git
-
-$ cd cpuminer-multi
-
-$ git checkout linux
-
-$ ./autogen.sh
-
-$ ./configure CFLAGS="-march=native" --with-crypto --with-curl
-
-$ make
-
-$ ./sudo make install
-
-
-# to run cpuminer, adapt settings from the example cpuminer-conf.json
-
-
-$ ~/cpuminer-multi
-
-
-$ ./cpuminer -c cpuminer-conf.json
-
-
-or use command: 
-
-
-$ ./cpuminer -a X13 -o http://127.0.0.1:8685 -u undevrpc -p / 
-
-
-
 
 ------
 
-- Genesis: 0000093b6095061fe0dc3aaf7da699b9fd4dee227ec4db881bc5eeefc920252b
-- Merkle: 8fb6fa0ec97b5bca685b59da2f4112b25ed9626e40b5b7b837f1429840a804ec
+PoW Rewards
+
+------
+
+
+```
+#!C+
+
+// miner's coin base reward
+int64_t GetProofOfWorkReward(int64_t nFees)
+{
+
+    int64_t nSubsidy = 0 * COIN;
+       
+    if(pindexBest->nHeight+1 == 1)
+        {
+            nSubsidy = 500000 * COIN;
+        }
+            else if(pindexBest->nHeight+1 >= 2 && pindexBest->nHeight+1 <= 99)
+        {
+            nSubsidy = 10 * COIN;
+        }
+            else if(pindexBest->nHeight+1 >= 100 && pindexBest->nHeight+1 <= 30100)
+        {
+            nSubsidy = 50 * COIN;
+        }
+            else if(pindexBest->nHeight+1 >= 30101 && pindexBest->nHeight+1 <= 60101)
+        {
+            nSubsidy = 45 * COIN;
+        }
+            else if(pindexBest->nHeight+1 >= 60102 && pindexBest->nHeight+1 <= 90102)
+        {
+            nSubsidy = 60 * COIN;
+        }
+            else if(pindexBest->nHeight+1 >= 90103 && pindexBest->nHeight+1 <= 120103)
+        {
+            nSubsidy = 55* COIN;
+        }
+            else if(pindexBest->nHeight+1 >= 120104 && pindexBest->nHeight+1 <= 150104)
+        {
+            nSubsidy = 40 * COIN;
+        }
+            else if(pindexBest->nHeight+1 >= 150105 && pindexBest->nHeight+1 <= 180105)
+        {
+            nSubsidy = 50 * COIN;
+        }
+            else if(pindexBest->nHeight+1 >= 180106 && pindexBest->nHeight+1 <= 210106)
+        {
+            nSubsidy = 40 * COIN;
+        }
+           else if(pindexBest->nHeight+1 >= 210107 && pindexBest->nHeight+1 <= 240107)
+        {
+            nSubsidy = 45 * COIN;
+        }
+           else if(pindexBest->nHeight+1 >= 240108 && pindexBest->nHeight+1 <= 270108)
+        {
+           nSubsidy = 50 * COIN;
+        }
+           else if(pindexBest->nHeight+1 >= 270109 && pindexBest->nHeight+1 <= 300109)
+        {
+           nSubsidy = 100 * COIN;
+        }
+
+
+      
+    if (fDebug && GetBoolArg("-printcreation"))
+    printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
+    
+    return nSubsidy + nFees;
+
+}
+
+```
