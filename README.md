@@ -1,4 +1,4 @@
-# undev X13, Hybrid to 300,000 blocks. Full PoS thereafter.
+# undev X13, Hybrid to 310,000 blocks. Full PoS thereafter.
 ------
 
 - X13 Algo
@@ -90,3 +90,18 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 }
 
 ```
+
+------
+
+In theory (staked blocks pay less of course)
+
+- 50 x 30000 =  1500000 
+- 45 x 30000 =  1350000
+- 60 x 30000 =  1600000
+- 55 x 30000 =  1550000
+- 40 x 30000 =  1400000
+- 50 x 30000 =  1500000
+- 40 x 30000 =  1400000
+- 45 x 30000 =  1350000
+- 50 x 30000 =  1500000
+- 100 x 30000 = 3000000
