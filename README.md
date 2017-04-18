@@ -21,9 +21,10 @@
 
 ------
 
-PoW Rewards
+# PoW Rewards
+-----
 
-------
+
 
 
 ```
@@ -116,4 +117,5 @@ In theory (staked blocks pay less of course)
 -----
 
 Genesis: 00000d15f3f346ac9d231d455417088c39b603bc335cac6786402fbb92083001
+
 MerkleRoot: 2371cde241a9b19628f8439a203ce0d32454b6231ea2b6446f7f8bd10912993b
