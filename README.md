@@ -17,7 +17,8 @@
 
 
 - full PoS at 310,000 blocks
-- 6% PoS. No maximum staking age.
+- 6% PoS. No maximum staking age
+- 25 Mining Confirmations
 
 ------
 
