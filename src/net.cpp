@@ -1137,6 +1137,10 @@ static const char *strDNSSeed[][2] = {
 	        {"connect.7dv.info", "connect.7dv.info"},
 	        {"connect1.7dv.info", "connect1.7dv.info"},
 	        {"connect2.7dv.info", "connect2.7dv.info"},
+	        {"connect3.7dv.info", "connect3.7dv.info"},
+	        {"connect4.7dv.info", "connect4.7dv.info"},
+	        {"connect5.7dv.info", "connect5.7dv.info"},
+	        {"connect6.7dv.info", "connect6.7dv.info"},
 
 };
 
