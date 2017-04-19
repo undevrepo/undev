@@ -1134,7 +1134,9 @@ void MapPort()
 static const char *strDNSSeed[][2] = {
                 {"104.140.105.45", "104.140.105.45"},
                 {"104.140.105.42", "104.140.105.42"},
-	        {"46.105.97.28", "46.105.97.28"},
+	        {"connect.7dv.info", "connect.7dv.ino"},
+	        {"connect1.7dv.info", "connect1.7dv.info"},
+	        {"connect2.7dv.info", "connect2.7dv.info"},
 
 };
 
