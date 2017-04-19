@@ -1,5 +1,5 @@
 # DIY DEVELOPMENT (NO AUTOMATION) 
------
+
 
 
 undev X13, hybrid to 310,000 blocks, full PoS thereafter.
@@ -9,6 +9,7 @@ undev X13, hybrid to 310,000 blocks, full PoS thereafter.
 
 
 # The New Dev Coin: UNDEV
+
 ------
 
 
