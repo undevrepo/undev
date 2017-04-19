@@ -1,9 +1,20 @@
-# DIY 
+# DIY DEVELOPMENT (NO AUTOMATION) 
 -----
 
 
-# undev X13, Hybrid to 310,000 blocks. Full PoS thereafter.
+# undev X13, hybrid to 310,000 blocks. Full PoS thereafter.
 ------
+
+
+# The New Dev Coin: UNDEV
+------
+
+
+No wallets, Windows, OSX, Linux (why Linux anyway?), Translations, Tweeters, Bounties or development.
+
+Make you wallet if you desire, and mine it. It is not so hard.
+
+-----
 
 - X13 Algo
 - 7203 rpc, 
