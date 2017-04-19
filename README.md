@@ -2,7 +2,9 @@
 -----
 
 
-# undev X13, hybrid to 310,000 blocks. Full PoS thereafter.
+undev X13, hybrid to 310,000 blocks, full PoS thereafter.
+
+
 ------
 
 
