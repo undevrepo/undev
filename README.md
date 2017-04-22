@@ -8,7 +8,9 @@ undev X13, hybrid to 310,000 blocks, full PoS thereafter.
 ------
 
 
-# The New Dev Coin: UNDEV
+# Blockexplorer
+
+[explorer.7dv.info](http://explorer.7dv.info:3001)
 
 ------
 
@@ -16,6 +18,10 @@ undev X13, hybrid to 310,000 blocks, full PoS thereafter.
 No wallets, Windows, OSX, Linux (why Linux anyway?), Translations, Tweeters, Bounties or development.
 
 Make you wallet if you desire, and mine it. It is not so hard.
+
+-----
+
+# The New Dev Coin
 
 -----
 
@@ -43,10 +49,6 @@ Make you wallet if you desire, and mine it. It is not so hard.
 
 
 ```
-#!C+
-
-// miner's coin base reward
-int64_t GetProofOfWorkReward(int64_t nFees)
 {
 
     int64_t nSubsidy = 0 * COIN;
@@ -100,12 +102,6 @@ int64_t GetProofOfWorkReward(int64_t nFees)
            nSubsidy = 100 * COIN;
         }
 
-
-      
-    if (fDebug && GetBoolArg("-printcreation"))
-    printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
-    
-    return nSubsidy + nFees;
 
 }
 
