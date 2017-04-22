@@ -8,18 +8,27 @@ undev X13, hybrid to 310,000 blocks, full PoS thereafter.
 ------
 
 
-# Blockexplorer
-
-[explorer.7dv.info](http://explorer.7dv.info:3001)
-
-------
-
-
 No wallets, Windows, OSX, Linux (why Linux anyway?), Translations, Tweeters, Bounties or development.
 
 Make you wallet if you desire, and mine it. It is not so hard.
 
 -----
+
+# Blockexplorer
+
+
+[explorer.7dv.info](http://explorer.7dv.info:3001)
+
+
+# Exchange
+
+
+[novaexchange.com](https://novaexchange.com)
+
+
+(have won vote)
+
+------
 
 # The New Dev Coin
 
